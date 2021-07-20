@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="script/script.js"></script>
+    </head>
+    <body>
+        <div class="jumbotron text-center">
+            <h1>ABC BOOKS</h1>
+            <p>Books for students</p> 
+        </div>
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <h3>Complete Java</h3>
+                <p><img src="Image/java.png"  class="img-thumbnail" alt="Responsive image" id="img1">
+                <button type="button" class="viewbutton" id="button1" data-toggle="modal" data-target="#book1">view more</button>
+                </p>
+                <p>A complete reference Java 7th edition</p>
+              </div>
+              <div class="col-sm-4">
+                <h3>Core Java</h3>
+                <p><img src="Image/javapro.jpg"  class="img-thumbnail" alt="Responsive image" id="img2">
+                  <button type="button" class="viewbutton" id="button2" data-toggle="modal" data-target="#book2">view more</button>
+                </p>
+                <p>Programing with java for begginers</p>
+              </div>
+              <div class="col-sm-4">
+                <h3>Basic of C Programing</h3>        
+                <p><img src="Image/c_pro.jpg" class="img-thumbnail" alt="Responsive image" id="img3" >
+                  <button type="button" class="viewbutton" id="button3" data-toggle="modal" data-target="#book3">view more</button>
+                </p>
+                <p>Basic C programing</p>
+              </div>
+            </div>
+          </div>
+          <!--2nd row books-->
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <h3>Complete Java</h3>
+                <p><img src="Image/php.jpg"  class="img-thumbnail" alt="Responsive image" id="img4">
+                <button type="button" class="viewbutton" id="button4"><a href="#">view more</a></button>
+                </p>
+                <p>Programing with PHP and mysql</p>
+              </div>
+              <div class="col-sm-4">
+                <h3>Web Development</h3>
+                <p><img src="Image/webdevelopment.jpg"  class="img-thumbnail" alt="Responsive image" id="img5">
+                  <button type="button" class="viewbutton" id="button5"><a href="#">view more</a></button>
+                </p>
+                <p>Web developement for bigginers with HTML & CSS</p>
+              </div>
+              <div class="col-sm-4">
+                <h3>Webdevelopment CSS</h3>        
+                <p><img src="Image/css.jpg"  class="img-thumbnail" alt="Responsive image" id="img6">
+                  <button type="button" class="viewbutton" id="button6"><a href="#">view more</a></button></p>
+                <p>Biggining with CSS</p>
+              </div>
+            </div>
+          </div>
+          <!--Popup box for book1-->
+          <div class="modal fade" id="book1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="exampleModalLabel">The complete reference JAVA</h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <table class="table">
+                    <thead>
+
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row" rowspan="7"><img src="Image/java.png" class="img-thumbnail" alt="Responsive image"></th>
+                        <th scope="row">Author</th>
+                        <td>Herbert Schildt</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Pages</th>
+                        <td>832</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Publisher</th>
+                        <td>McGraw Hill Education; 4th edition (1 July 2017)</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Language</th>
+                        <td>English</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Edition</th>
+                        <td>7th</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Price</th>
+                        <td>Rs. 800/-</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Ratings</th>
+                        <td><span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  This books are sepecially for computer sc, BCA, MCA, Btech Students.
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--pop up for book2-->
+          <div class="modal fade" id="book2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="exampleModalLabel">Core JAVA</h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <table class="table">
+                    <thead>
+
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row" rowspan="7"><img src="Image/javapro.jpg" class="img-thumbnail" alt="Responsive image"></th>
+                        <th scope="row">Author</th>
+                        <td>Dr. Barry Burd</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Pages</th>
+                        <td>832</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Publisher</th>
+                        <td>Wiley (1 January 2017)</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Language</th>
+                        <td>English</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Edition</th>
+                        <td>7th</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Price</th>
+                        <td>Rs. 550/-</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Ratings</th>
+                        <td><span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star "></span>
+                          <span class="fa fa-star"></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  This books are sepecially for computer sc, BCA, MCA, Btech Students.
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--3rd book popup-->
+          <div class="modal fade" id="book3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="exampleModalLabel">Basic of C programing</h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <table class="table">
+                    <thead>
+
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row" rowspan="7"><img src="Image/c_pro.jpg" class="img-thumbnail" alt="Responsive image"></th>
+                        <th scope="row">Author</th>
+                        <td>Dr. Barry Burd</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Pages</th>
+                        <td>400</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Publisher</th>
+                        <td>‎ Pearson Education India; 2nd edition (1 January 2015)</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Language</th>
+                        <td>English</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Edition</th>
+                        <td>11th</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Price</th>
+                        <td>Rs. 550/-</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Ratings</th>
+                        <td><span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  This books are sepecially for computer sc, BCA, MCA, Btech Students.
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer>
+            <h6>&copy; ABC books 2019 - 22<br>
+            RoyGoswamiSuvankar
+            </h6>
+          </footer>
+    </body>
+</html>
